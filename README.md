@@ -62,4 +62,7 @@ class ITI_Widget_Image extends WP_Widget
        $instance[$this->image_field] = intval( strip_tags( $new_instance[$this->image_field] ) );
        return $instance;
    }
-}```
+}
+```
+
+You can replace the image size you're looking for in `widget()` by swapping out `thumbnail` with your desired image size.
