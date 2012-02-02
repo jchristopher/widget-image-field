@@ -8,7 +8,8 @@ This plugin simply makes it easier for you to use an 'image' field <em>within <s
 
 Plugin usage <strong>within a Widget you've created</strong> is as follows:
 
-```<?php
+```php
+<?php
 
 // we can only use this Widget if the plugin is active
 if( class_exists( 'WidgetImageField' ) )
