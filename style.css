@@ -1,1 +1,2 @@
-.iti-image-widget-image img { display:block; margin:10px auto 15px; border-radius:5px; border:1px solid #DFDFDF; max-width:100%; height:auto !important; }
+.iti-image-widget-field { overflow:hidden; zoom:1; padding-bottom:15px; }
+.iti-image-widget-image img { background:#fff; display:block; margin:10px auto 15px; border-radius:5px; border:1px solid #DFDFDF; max-width:99%; height:auto !important; }

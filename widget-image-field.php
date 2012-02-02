@@ -4,7 +4,7 @@
     Plugin URI: http://mondaybynoon.com/wordpress/widget-image-field/
     Description: This prepares an image field for use within your own Widgets
     Author: Jonathan Christopher
-    Version: 0.1
+    Version: 0.2
     Author URI: http://mondaybynoon.com/
 */
 
@@ -123,7 +123,7 @@ class WidgetImageField
         $field = false;
         if( $this->widget && ( isset( $this->widget->image_field ) || $field_name ) )
         {
-            $field  = "<div class='iti-image-widget-image' id='" . $this->widget->id . "'>";
+            $field  = "<div class='iti-image-widget-field'><div class='iti-image-widget-image' id='" . $this->widget->id . "'>";
             $field .= "<input type='hidden' style='display:none;' id='" . $this->widget->get_field_id( $this->widget->image_field ) . "' name='" . $this->widget->get_field_name( $this->widget->image_field ) . "' value='" . $this->image_id . "' />";
 
             if( $this->image_id )
@@ -135,7 +135,7 @@ class WidgetImageField
 
             $field .= "<a class='button iti-image-widget-trigger' href='media-upload.php?TB_iframe=1&amp;width=640&amp;height=1500' title='" . __( 'Choose Image' ) . "'>";
             $field .= __( 'Choose Image' );
-            $field .= "</a>";
+            $field .= "</a></div>";
         }
         return $field;
     }
