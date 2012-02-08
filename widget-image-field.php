@@ -72,7 +72,7 @@ class WidgetImageField
 
         if( $this->image_id )
         {
-            $image      = $this->get_image( $this->image_id, $size );
+            $image      = $this->get_image( $size );
             $src        = $image[0];
         }
 
@@ -85,7 +85,7 @@ class WidgetImageField
 
         if( $this->image_id )
         {
-            $image          = $this->get_image( $this->image_id, $size );
+            $image          = $this->get_image( $size );
             $dimensions     = array( $image[1], $image[2] );
         }
 
@@ -98,7 +98,7 @@ class WidgetImageField
 
         if( $this->image_id )
         {
-            $dimensions     = $this->get_image_dimensions( $this->image_id, $size );
+            $dimensions     = $this->get_image_dimensions( $size );
             $width          = $dimensions[0];
         }
 
@@ -111,7 +111,7 @@ class WidgetImageField
 
         if( $this->image_id )
         {
-            $dimensions     = $this->get_image_dimensions( $this->image_id, $size );
+            $dimensions     = $this->get_image_dimensions( $size );
             $height         = $dimensions[1];
         }
 
