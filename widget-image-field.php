@@ -4,14 +4,14 @@
     Plugin URI: http://mondaybynoon.com/wordpress/widget-image-field/
     Description: This prepares an image field for use within your own Widgets
     Author: Jonathan Christopher
-    Version: 0.2
+    Version: 0.3
     Author URI: http://mondaybynoon.com/
 */
 
 if( !defined( 'IS_ADMIN' ) )
     define( 'IS_ADMIN',  is_admin() );
 
-define( 'WIDGET_IMAGE_FIELD_VERSION', '0.1' );
+define( 'WIDGET_IMAGE_FIELD_VERSION', '0.3' );
 define( 'WIDGET_IMAGE_FIELD_DIR', WP_PLUGIN_DIR . '/' . basename( dirname( __FILE__ ) ) );
 define( 'WIDGET_IMAGE_FIELD_URL', rtrim( plugin_dir_url( __FILE__ ), '/' ) );
 
